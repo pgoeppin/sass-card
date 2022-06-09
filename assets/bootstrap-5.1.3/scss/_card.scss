@@ -2,9 +2,10 @@
 // Base styles
 //
 .card-customize {
-  background-color: black !important;
   width: 20em;
   color: white;
+  border: 2px solid pink;
+  background-color: black;
 }
 .card-title-color {
   color: pink;
@@ -17,9 +18,9 @@
   min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
   height: $card-height;
   word-wrap: break-word;
-  background-color: $card-bg;
+
   background-clip: border-box;
-  border: $card-border-width solid $card-border-color;
+
   @include border-radius($card-border-radius);
   @include box-shadow($card-box-shadow);
 
