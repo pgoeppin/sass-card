@@ -1,8 +1,16 @@
 //
 // Base styles
 //
-
+.card-customize {
+  background-color: black !important;
+  width: 20em;
+  color: white;
+}
+.card-title-color {
+  color: pink;
+}
 .card {
+  @extend .card-customize;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -52,6 +60,7 @@
 }
 
 .card-title {
+  @extend .card-title-color;
   margin-bottom: $card-title-spacer-y;
 }
 
